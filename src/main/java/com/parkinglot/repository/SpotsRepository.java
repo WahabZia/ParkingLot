@@ -11,7 +11,7 @@ import com.parkinglot.data.Spots;
 
 public interface SpotsRepository extends JpaRepository<Spots, Long> {
 
-	public List<Spots> findAllByStatusAndFloorNoOrderByIdDesc(String status,Long id);
+    public List<Spots> findAllByStatusAndFloorNoOrderByIdDesc(String status,Long id);
 	
     @Query("SELECT COUNT(s) FROM Spots s WHERE s.status=?1")
 	public int findCountByStatus(String status);
