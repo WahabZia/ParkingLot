@@ -14,8 +14,10 @@ http://localhost:8080/parking/api/enter
 	"model":"Test Model"
 }
 
-This api is responsible for car exit logic and total ammount cahrged calculation .
+This api is responsible for car exit logic and total amount cahrged calculation .
 http://localhost:8080/parking/api/exit
 {
    "regNo":"est-124"
 }
+
+You can find total amount charged in application onsole .
