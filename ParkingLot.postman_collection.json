@@ -1,0 +1,71 @@
+{
+	"info": {
+		"_postman_id": "b47a73bc-7626-499b-b3ed-b47ab32d4b84",
+		"name": "ParkingLot",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "{{localpath}}/parking/api/exit",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"regNo\":\"est-124\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/parking/api/exit",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"parking",
+						"api",
+						"exit"
+					]
+				},
+				"description": "Exit api .This api is responsible for car exit logic and total amount cahrged calculation ."
+			},
+			"response": []
+		},
+		{
+			"name": "{{localpath}}/parking/api/enter",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"regNo\":\"est-124\",\r\n\t\"weight\":10.5,\r\n\t\"height\":7,\r\n\t\"model\":\"Blah Blah\"\r\n   }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/parking/api/enter",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"parking",
+						"api",
+						"enter"
+					]
+				},
+				"description": "Entry Api .This api api is responsible for the car entrance logic and decide appropriate spot and rate/minute ."
+			},
+			"response": []
+		}
+	]
+}
